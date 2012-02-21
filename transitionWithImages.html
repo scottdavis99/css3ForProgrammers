@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Transition with Images</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <style type="text/css" media="screen">
+    
+    ul{
+      list-style-type: none;      
+    }
+    
+    li{
+      float: left;
+      padding: 1em;
+    }
+
+    .box img{
+      width: 100px;
+      height: 150px;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .box img:hover{
+      width: 150px;
+      height: 200px;      
+    }    
+    
+    /* NOTE: used for screen capture in the presentation */
+    .fakeHover{
+      width: 150px;
+      height: 200px;            
+    }
+    
+    </style>
+  </head>
+  
+  <body>
+    <h1>Transition with Images</h1>
+    
+    <!-- 
+      NOTE: Be sure to request the bigger ":hover"-sized images 
+            Downsampling images is essentially free (bandwidth concerns notwithstanding).
+            Upsampling images causes the dreaded "jaggies"...
+    -->    
+    <div id="covers">
+      <ul>
+        <li><div class="box"><img src="http://lorempixel.com/150/200/food/1" /></div></li>
+        <li><div class="box"><img src="http://lorempixel.com/150/200/food/2" /></div></li>
+        <li><div class="box"><img src="http://lorempixel.com/150/200/food/3" /></div></li>
+        <li><div class="box"><img src="http://lorempixel.com/150/200/food/4" /></div></li>
+      </ul>
+    </div>
+  </body>
+  
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>More Selectors</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <style type="text/css" media="screen">
+      input{
+        width: 15em;
+      }
+      
+      input[type='submit']{
+        width: 7em;
+        color: red;
+      }
+      
+      label{
+        display:block;
+        font-style: italic;
+        font-weight: bold;
+      }
+      
+      label:after{
+        content: ":";        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>More Selectors</h1>
+    <form action="#">
+      <label for="name">Name</label>
+      <input type="text" name="name" value="" id="name"/>
+      <br/>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" value="" id="email"/>
+      <br/>
+
+      <label for="web">Web</label>
+      <input type="url" name="web" value="" id="web"/>
+      <br/>      
+
+      <input type="submit" value="Continue &rarr;">
+    </form>
+    
+  </body>  
+</html>

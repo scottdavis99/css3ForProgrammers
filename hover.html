@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hover</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <style type="text/css" media="screen">
+    
+    ul{
+      list-style-type: none;      
+    }
+    
+    li{
+      float: left;
+      padding: 1em;
+    }
+
+    .box{
+      background-color: green;
+      width: 100px;
+      height: 150px;
+    }
+
+    .box:hover{
+      background-color: blue;
+      width: 150px;
+      height: 200px;      
+    }    
+    
+    /* NOTE: used for screen capture in the presentation */
+    .fakeHover{
+      background-color: blue;
+      width: 150px;
+      height: 200px;            
+    }
+    
+    </style>
+  </head>
+  
+  <body>
+    <h1>Hover</h1>
+    
+    <div id="covers">
+      <ul>
+        <li><div class="box"></div></li>
+        <li><div class="box"></div></li>
+        <li><div class="box"></div></li>
+        <li><div class="box"></div></li>
+      </ul>
+    </div>
+    
+  </body>
+  
+</html>
