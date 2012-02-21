@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Layout</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <style type="text/css" media="screen">
+      .header{
+        background-color: yellow;
+        width: 100%;
+        clear: both;
+      }
+      
+      .wrapper{
+        width: 100%;
+        overflow: auto;
+        background-color: orange;        
+      }      
+      
+      .sidebar{
+        background-color: orange;        
+        width: 25%;
+        float: left;
+      }
+      
+      .main{
+        background-color: blue;        
+        width: 75%;
+        float: left;
+      }
+      
+      .footer{
+        background-color: green;        
+        width: 100%;
+        clear: both;        
+      }
+      
+      @media screen and (max-width:320px){
+                  .sidebar{
+                    width: 40%;
+                  }
+                  
+                  .main{
+                    width: 60%;
+                  }
+                }
+    </style>
+  </head>
+  
+  <body>  
+    <div class="header">
+      ACME Web Design
+    </div>
+    
+    <div class="wrapper">      
+      <div class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Customers</li>
+        <li>About Us</li>
+      </ul>
+    </div>
+    
+      <div class="main">
+      <p>Bacon ipsum dolor sit amet fatback shoulder bresaola rump tri-tip biltong sirloin, ham hock bacon strip steak andouille filet mignon ribeye ground round. Pastrami salami tongue venison t-bone sirloin short ribs, ham swine. Bacon jowl tongue leberkas shankle. Short loin sirloin tongue frankfurter, turkey flank pancetta ground round prosciutto kielbasa.</p>
+
+      <p>Ham tenderloin flank ribeye turducken hamburger. Bresaola meatloaf ham, sirloin flank swine shankle sausage capicola short loin boudin kielbasa. Tongue beef fatback biltong hamburger kielbasa. Jowl spare ribs turkey biltong, meatball venison prosciutto ground round frankfurter pork loin fatback pancetta swine.</p>
+
+      <p>Venison pork loin ribeye, prosciutto corned beef salami hamburger swine kielbasa ham pork belly. Beef ribs frankfurter ham, meatball boudin bacon ham hock swine venison fatback biltong pork belly. Filet mignon ham hock andouille cow bresaola. Bacon drumstick ball tip kielbasa jowl shank, pork chop spare ribs meatloaf shoulder andouille short ribs beef ribs.</p>
+      
+    </div> <!-- end .body -->
+    </div> <!-- end .wrapper -->
+        
+    <div class="footer">
+      &copy; 2012, ACME Web Design, Inc.      
+    </div>    
+  </body>
+  
+</html>
